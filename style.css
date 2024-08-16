@@ -37,13 +37,16 @@ a:hover {
     line-height: 1.4; /* Adjust the line height for readability */
 }
 
-/* Add this section for the header background image */
+/* Header with background image at its original size */
 header {
     background-image: url('header-image.jpg'); /* Ensure the file name and path are correct */
-    background-size: contain; /* Adjusts the image size to fit within the container */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center;
-    height: 600px; /* Match the height to your image's height */
+    background-size: auto; /* Display the image at its original size */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    background-position: center; /* Center the image in the header */
+    height: 600px; /* Set height to match the image's height */
+    width: 1200px; /* Set width to match the image's width */
+    max-width: 100%; /* Ensure it doesn’t overflow on smaller screens */
+    margin: 0 auto; /* Center the header on the page */
     display: flex;
     justify-content: center;
     align-items: center;
