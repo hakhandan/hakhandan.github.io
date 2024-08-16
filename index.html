@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,30 +41,19 @@ h<!DOCTYPE html>
             margin: 0 auto;
         }
 
-        .about {
+        .content-item {
+            margin: 30px 0;
+            text-align: justify;
+        }
+
+        .content-item h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
             text-align: center;
         }
 
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .project-item {
-            width: 300px;
-            margin: 15px;
-            text-align: center;
-        }
-
-        .project-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .project-item h3 {
-            margin: 15px 0 10px;
+        .content-item p {
+            margin: 0;
         }
 
         .contact {
@@ -98,33 +87,28 @@ h<!DOCTYPE html>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Me</h2>
+    <!-- About Me Section -->
+    <section class="content-item">
+        <h3>About Me</h3>
         <p>Hello! I'm Hossein, a dedicated researcher and scientist with extensive expertise in quantitative modeling, plant and animal disease epidemiology, and spatial and ecological modeling. My passion lies in using advanced modeling techniques to solve complex biological and environmental challenges, from predicting the spread of diseases to assessing the impact of climate change on ecosystems. This website showcases my scientific contributions, research interests, and ways to connect with me. Feel free to explore!</p>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>Projects</h2>
+    <!-- Biography Section -->
+    <section class="content-item">
+        <h3>Biography</h3>
+        <p>I was born in Zabol, a city in the Sistan and Baluchestan region of Iran, known for its rich history and the vast landscapes of the Iranian Plateau. My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
+    </section>
 
-        <div class="project-item">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Biography</h3>
-            <p>I was born in Zabol, a city in the Sistan and Baluchestan region of Iran, known for its rich history and the vast landscapes of the Iranian Plateau. My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
-        </div>
+    <!-- Research Section -->
+    <section class="content-item">
+        <h3>Research</h3>
+        <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
+    </section>
 
-        <div class="project-item">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Research </h3>
-            <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
-        </div>
-
-        <div class="project-item">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Affilation</h3>
-            <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
-        </div>
+    <!-- Affiliation Section -->
+    <section class="content-item">
+        <h3>Affiliation</h3>
+        <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
     </section>
 
     <!-- Contact Section -->
