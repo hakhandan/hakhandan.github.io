@@ -35,6 +35,28 @@
             margin: 10px 0 0;
         }
 
+        .ribbon-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        .ribbon {
+            background-color: #007BFF; /* Blue color for the ribbons */
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 25px;
+            text-decoration: none;
+            width: 200px;
+        }
+
+        .ribbon:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
         section {
             padding: 60px 20px;
             max-width: 1000px;
@@ -87,28 +109,36 @@
         </div>
     </header>
 
-    <!-- About Me Section -->
-    <section class="content-item">
-        <h3>About Me</h3>
-        <p>Hello! I'm Hossein, a dedicated researcher and scientist with extensive expertise in quantitative modeling, plant and animal disease epidemiology, and spatial and ecological modeling. My passion lies in using advanced modeling techniques to solve complex biological and environmental challenges, from predicting the spread of diseases to assessing the impact of climate change on ecosystems. This website showcases my scientific contributions, research interests, and ways to connect with me. Feel free to explore!</p>
-    </section>
+    <!-- Ribbon Navigation -->
+    <div class="ribbon-container">
+        <a href="#biography" class="ribbon">Biography</a>
+        <a href="#research" class="ribbon" style="background-color: #28A745;">Research</a> <!-- Green ribbon -->
+        <a href="#affiliation" class="ribbon">Affiliation</a>
+        <a href="#about" class="ribbon" style="background-color: #28A745;">About Me</a> <!-- Green ribbon -->
+    </div>
 
     <!-- Biography Section -->
-    <section class="content-item">
+    <section id="biography" class="content-item">
         <h3>Biography</h3>
         <p>I was born in Zabol, a city in the Sistan and Baluchestan region of Iran, known for its rich history and the vast landscapes of the Iranian Plateau. My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
     </section>
 
     <!-- Research Section -->
-    <section class="content-item">
+    <section id="research" class="content-item">
         <h3>Research</h3>
         <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
     </section>
 
     <!-- Affiliation Section -->
-    <section class="content-item">
+    <section id="affiliation" class="content-item">
         <h3>Affiliation</h3>
         <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="content-item">
+        <h3>Hobbies and Interests</h3>
+        <p>Hello! I'm Hossein, a dedicated researcher and scientist with extensive expertise in quantitative modeling, plant and animal disease epidemiology, and spatial and ecological modeling. My passion lies in using advanced modeling techniques to solve complex biological and environmental challenges, from predicting the spread of diseases to assessing the impact of climate change on ecosystems. This website showcases my scientific contributions, research interests, and ways to connect with me. Feel free to explore!</p>
     </section>
 
     <!-- Contact Section -->
