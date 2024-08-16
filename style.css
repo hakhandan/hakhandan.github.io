@@ -36,3 +36,17 @@ a:hover {
     font-size: 0.9em; /* Adjust this value to make the text smaller */
     line-height: 1.4; /* Adjust the line height for readability */
 }
+
+/* Add this section for the header background image */
+header {
+    background-image: url('header-image.jpg'); /* Ensure the file name and path are correct */
+    background-size: contain; /* Adjusts the image size to fit within the container */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center;
+    height: 600px; /* Match the height to your image's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
