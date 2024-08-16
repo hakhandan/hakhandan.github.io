@@ -3,90 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossein's Research and Interests</title>
+    <title>Hossein's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e9ecef;
-            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            color: #333;
         }
 
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
+            background-image: url('header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
             display: flex;
             justify-content: center;
-            background-color: #343a40;
-        }
-
-        nav a {
+            align-items: center;
             color: white;
-            padding: 14px 20px;
-            text-decoration: none;
             text-align: center;
         }
 
-        nav a:hover {
-            background-color: #495057;
-            color: white;
+        header h1 {
+            font-size: 4em;
+            margin: 0;
         }
 
-        .container {
-            padding: 40px;
-            text-align: center;
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
         }
 
-        .container img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .container p {
-            font-size: 18px;
-            max-width: 800px;
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
+        .about {
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-item {
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-item h3 {
+            margin: 15px 0 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
         footer {
-            background-color: #343a40;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Website</h1>
+        <div>
+            <h1>Hossein Ali Narouei-Khandan</h1>
+            <p>Researcher | Scientist | Innovator</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="research.html">Research</a>
-        <a href="modeling-tools.html">Modeling & Tools</a>
-        <a href="interests-hobbies.html">Interests & Hobbies</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website! I am a dedicated researcher with expertise in quantitative modeling, plant and animal disease epidemiology, and spatial and ecological modeling. Explore my projects and learn more about my work.</p>
+    </section>
 
-    <div class="container">
-        <img src="your-photo.jpg" alt="Hossein's Photo">
-        <p>Hello! I'm Hossein, a dedicated researcher and scientist with extensive expertise in quantitative modeling, plant and animal disease epidemiology, and spatial and ecological modeling. My passion lies in using advanced modeling techniques to solve complex biological and environmental challenges, from predicting the spread of diseases to assessing the impact of climate change on ecosystems. This website showcases my scientific contributions, research interests, and ways to connect with me. Feel free to explore!</p>
-    </div>
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
 
+        <div class="project-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>A brief description of Project 1, highlighting the key features and outcomes.</p>
+        </div>
+
+        <div class="project-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>A brief description of Project 2, focusing on the main objectives and results.</p>
+        </div>
+
+        <div class="project-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>A brief description of Project 3, outlining the challenges and achievements.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to <a href="mailto:hakhandan@gmail.com">email me</a> or connect with me on <a href="https://www.linkedin.com/in/hossein-narouei-khandan/">LinkedIn</a>.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         &copy; 2024 Hossein Ali Narouei-Khandan
     </footer>
+
 </body>
 </html>
