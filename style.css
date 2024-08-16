@@ -28,3 +28,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* New styles for content-box paragraphs */
+.content-box p {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 0.9em; /* Adjust this value to make the text smaller */
+    line-height: 1.4; /* Adjust the line height for readability */
+}
