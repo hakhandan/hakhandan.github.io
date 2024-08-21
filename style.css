@@ -3,15 +3,14 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,16 +34,18 @@ header p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
 }
 
 .content-box {
-    width: 23%; /* Ensure each box takes up 23% of the container width */
+    width: 30%; /* Adjust width to fit three boxes in a row */
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px 0; /* Adjusted margin to fit four boxes in a row */
+    margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 200px; /* Set a fixed height */
+    position: relative;
+    height: 250px;
 }
 
 .content-box h3 {
@@ -55,6 +56,8 @@ header p {
     background-color: #28A745;
     padding: 10px;
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
     width: 80%;
     margin: 0 auto 20px;
 }
@@ -94,4 +97,25 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 90%; /* Take up most of the screen width on mobile */
+        margin-bottom: 20px; /* Add some space between stacked items */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Smaller header text on mobile */
+    }
+
+    header p {
+        font-size: 1.2em; /* Adjust subtext size on mobile */
+    }
 }
