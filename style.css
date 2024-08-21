@@ -1,68 +1,54 @@
-.content-box p {
-    margin-top: 20px;
-    text-align: justify;
-    font-size: 0.9em; /* Adjust this value to make the text smaller */
-    line-height: 1.4; /* Adjust the line height for readability */
-    font-size: 0.9em;
-    line-height: 1.4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossein's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
 
-/* Header with background image at its original size */
-header {
-    background-image: url('header-image.jpg'); /* Ensure the file name and path are correct */
-    background-size: auto; /* Display the image at its original size */
-    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-    background-position: center; /* Center the image in the header */
-    height: 600px; /* Set height to match the image's height */
-    width: 1200px; /* Set width to match the image's width */
-    max-width: 100%; /* Ensure it doesn’t overflow on smaller screens */
-    margin: 0 auto; /* Center the header on the page */
-    background-image: url('header-image.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Hossein Ali Narouei-Khandan</h1>
+            <p>Researcher | Scientist | Innovator</p>
+        </div>
+    </header>
 
-/* Section container for the content boxes */
-.section-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    padding: 20px;
-    gap: 10px; /* Add some gap between the boxes */
-}
+    <!-- Content Sections -->
+    <div class="section-container">
+        <div id="biography" class="content-box">
+            <h3><a href="#biography">Biography</a></h3>
+            <p>My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
+        </div>
 
-/* Content boxes */
-.content-box {
-    width: 48%; /* Ensure boxes stay side by side, slightly reduced width */
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px 0; /* Remove side margins to maintain side-by-side alignment */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    min-height: 200px; /* Set a minimum height */
-    height: auto; /* Allow height to adjust based on content */
-    overflow-y: auto; /* Scroll if content overflows */
-}
+        <div id="research" class="content-box">
+            <h3><a href="#research">Research</a></h3>
+            <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
+        </div>
 
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .section-container {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
+        <div id="affiliation" class="content-box">
+            <h3><a href="#affiliation">Affiliation</a></h3>
+            <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
+        </div>
+        
+        <div id="hobbies and interests" class="content-box">
+            <h3><a href="#hobbies and interests">Interests & Hobbies</a></h3>
+            <p>What I do in my free time: music, and apps that I create just for fun!</p>
+        </div>
+    </div>
 
-    .content-box {
-        width: 100%; /* Full width on smaller screens */
-        margin: 10px 0; /* Adjust margin for stacked layout */
-    }
-}
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to <a href="mailto:hakhandan@gmail.com">email me</a>, connect with me on <a href="https://www.linkedin.com/in/hossein-narouei-khandan/">LinkedIn</a>, or visit my <a href="https://www.researchgate.net/profile/Hossein-Narouei-Khandan">ResearchGate profile</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Hossein Ali Narouei-Khandan
+    </footer>
+
+</body>
+</html>
