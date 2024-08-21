@@ -46,16 +46,25 @@
             padding: 20px;
         }
 
-        .content-box {
-            width: 45%;
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-            height: 200px;
-        }
+    .content-box {
+    width: 45%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px; /* Reduced padding to create more space */
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 200px; /* Ensure a minimum height */
+    height: auto; /* Allow height to adjust based on content */
+    overflow-y: auto; /* Add scrollbar if necessary */
+}
+
+.content-box p {
+    font-size: 0.9em; /* Slightly smaller font size */
+    word-wrap: break-word; /* Ensure long words wrap */
+    hyphens: auto; /* Enable automatic hyphenation */
+}
+
 
         .content-box h3 {
             font-size: 1.5em;
@@ -174,7 +183,7 @@
     <!-- Header Section -->
     <header>
         <div>
-            <h1>Hossein Ali Narouei-Khandan</h1>
+            <h1>Hossein A. Narouei-Khandan</h1>
             <p>Researcher | Scientist | Innovator</p>
         </div>
     </header>
@@ -210,7 +219,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2024 Hossein Ali Narouei-Khandan
+        &copy; 2024 Hossein A. Narouei-Khandan
     </footer>
 
 </body>
