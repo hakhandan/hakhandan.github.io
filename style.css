@@ -10,7 +10,7 @@ header {
     background-image: url('header-image.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,20 +21,20 @@ header {
 }
 
 header h1 {
-    font-size: 4em;
+    font-size: 2.5em; /* Reduced font size for better mobile fit */
     margin: 0;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Adjusted font size for better readability */
     margin: 10px 0 0;
 }
 
 .section-container {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
     justify-content: space-between;
     padding: 20px;
-    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
 }
 
 .content-box {
@@ -43,10 +43,10 @@ header p {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px 0; /* Adjust margin for better spacing on small screens */
+    margin: 10px 0; /* Add some space between boxes */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: auto; /* Remove fixed height for better content fit */
+    height: auto; /* Allow the height to adjust based on content */
 }
 
 .content-box h3 {
@@ -76,7 +76,7 @@ header p {
 .content-box p {
     margin-top: 20px;
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 1em; /* Slightly larger font size for readability */
 }
 
 .contact {
@@ -112,13 +112,4 @@ footer a:hover {
         width: 90%; /* Make content boxes take up most of the screen */
         margin: 10px 0; /* Adjust margin for stacked layout */
         padding: 15px; /* Slightly reduce padding for better fit */
-    }
-
-    header h1 {
-        font-size: 2.5em; /* Adjust font size on smaller screens */
-    }
-
-    header p {
-        font-size: 1.2em;
-    }
-}
+        font-size: 1.1em;
