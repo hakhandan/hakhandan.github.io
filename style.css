@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6; /* Slightly increased line spacing */
 }
 
 header {
@@ -34,18 +34,19 @@ header p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
 }
 
 .content-box {
-    width: 30%; /* Adjust width to fit three boxes in a row */
+    width: 100%; /* Make boxes full-width on small screens */
+    max-width: 100%; /* Ensure they don't exceed screen width */
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0; /* Adjust margin for better spacing on small screens */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 250px;
+    height: auto; /* Remove fixed height for better content fit */
 }
 
 .content-box h3 {
@@ -58,7 +59,7 @@ header p {
     border-radius: 25px;
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: auto;
     margin: 0 auto 20px;
 }
 
@@ -104,18 +105,20 @@ footer a:hover {
     .section-container {
         flex-direction: column;
         align-items: center;
+        padding: 10px; /* Reduce padding on smaller screens */
     }
 
     .content-box {
-        width: 90%; /* Take up most of the screen width on mobile */
-        margin-bottom: 20px; /* Add some space between stacked items */
+        width: 90%; /* Make content boxes take up most of the screen */
+        margin: 10px 0; /* Adjust margin for stacked layout */
+        padding: 15px; /* Slightly reduce padding for better fit */
     }
 
     header h1 {
-        font-size: 2.5em; /* Smaller header text on mobile */
+        font-size: 2.5em; /* Adjust font size on smaller screens */
     }
 
     header p {
-        font-size: 1.2em; /* Adjust subtext size on mobile */
+        font-size: 1.2em;
     }
 }
