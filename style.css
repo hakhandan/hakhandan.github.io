@@ -1,25 +1,29 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Background color for the page */
+    color: #333; /* Text color */
     margin: 0;
     padding: 20px;
     line-height: 1.6;
 }
 
+/* Headings */
 h2, h3 {
-    color: #0056b3;
+    color: #0056b3; /* Blue color for headings */
 }
 
+/* Container for the content */
 .container {
-    max-width: 1200px; /* Increased max-width to accommodate four boxes */
+    max-width: 1200px; /* Ensure container width can accommodate four boxes */
     margin: auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
+/* Links styling */
 a {
     color: #0056b3;
     text-decoration: none;
@@ -29,24 +33,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* New styles for content-box paragraphs */
-.content-box p {
-    margin-top: 20px;
-    text-align: justify;
-    font-size: 0.9em;
-    line-height: 1.4;
-}
-
-/* Header with background image at its original size */
+/* Header section with background image */
 header {
-    background-image: url('header-image.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+    background-image: url('header-image.jpg'); /* Ensure the correct image path */
+    background-size: cover; /* Make the image cover the entire header area */
+    background-position: center; /* Center the background image */
+    height: 300px; /* Set the height of the header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,33 +46,56 @@ header {
     text-align: center;
 }
 
-/* Section container for the content boxes */
+/* Container for the content boxes */
 .section-container {
     display: flex;
-    justify-content: space-between; /* Evenly distribute space between boxes */
-    flex-wrap: nowrap; /* Keep all boxes in a single row */
-    padding: 20px;
-    gap: 10px; /* Add some gap between the boxes */
+    justify-content: space-between; /* Evenly distribute boxes */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Space between the boxes */
 }
 
-/* Content boxes */
+/* Individual content boxes */
 .content-box {
-    width: 22%; /* Adjust width to fit four boxes side by side */
+    width: 23%; /* Fixed width to fit four boxes side by side */
     background-color: white;
     border: 1px solid #ddd;
     padding: 15px;
-    margin: 10px 0; /* Remove side margins to maintain side-by-side alignment */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    min-height: 200px; /* Set a minimum height */
-    height: auto; /* Allow height to adjust based on content */
-    overflow-y: auto; /* Scroll if content overflows */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    height: 250px; /* Fixed height */
+    overflow: hidden; /* Hide overflow text */
 }
 
-/* Media Query for Smaller Screens */
+/* Paragraph styling within content boxes */
+.content-box p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Contact section styling */
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background for the contact section */
+    color: white; /* White text color */
+}
+
+.contact a {
+    color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 1200px) {
     .content-box {
-        width: 24%; /* Slightly increase width on smaller screens to fit four boxes */
+        width: 24%; /* Slightly adjust width on smaller screens */
     }
 }
 
