@@ -1,82 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossein's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-h2, h3 {
-    color: #0056b3;
-}
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Hossein Ali Narouei-Khandan</h1>
+            <p>Researcher | Scientist | Innovator</p>
+        </div>
+    </header>
 
-.container {
-    max-width: 1200px; /* Ensure this is wide enough to accommodate all four boxes */
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    <!-- Content Sections -->
+    <div class="section-container">
+        <div id="biography" class="content-box">
+            <h3><a href="#biography">Biography</a></h3>
+            <p>My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
+        </div>
 
-a {
-    color: #0056b3;
-    text-decoration: none;
-}
+        <div id="research" class="content-box">
+            <h3><a href="#research">Research</a></h3>
+            <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
+        </div>
 
-a:hover {
-    text-decoration: underline;
-}
+        <div id="affiliation" class="content-box">
+            <h3><a href="#affiliation">Affiliation</a></h3>
+            <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
+        </div>
+        
+        <div id="hobbies" class="content-box">
+            <h3><a href="#hobbies">Interests & Hobbies</a></h3>
+            <p>What I do in my free time: music, and apps that I create just for fun!</p>
+        </div>
+    </div>
 
-/* Section container for the content boxes */
-.section-container {
-    display: flex;
-    justify-content: space-between; /* Evenly distribute the boxes across the container */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    padding: 20px;
-    gap: 10px; /* Space between the boxes */
-}
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to <a href="mailto:hakhandan@gmail.com">email me</a>, connect with me on <a href="https://www.linkedin.com/in/hossein-narouei-khandan/">LinkedIn</a>, or visit my <a href="https://www.researchgate.net/profile/Hossein-Narouei-Khandan">ResearchGate profile</a>.</p>
+    </section>
 
-/* Content boxes */
-.content-box {
-    width: 23%; /* Fixed width to fit four boxes side by side */
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    height: 250px; /* Fixed height */
-    overflow: hidden; /* Hide any overflow text */
-}
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Hossein Ali Narouei-Khandan
+    </footer>
 
-/* Adjust font size inside the boxes */
-.content-box p {
-    font-size: 0.9em;
-    line-height: 1.4;
-    text-align: justify;
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 1200px) {
-    .content-box {
-        width: 24%; /* Slightly adjust width on smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .section-container {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
-
-    .content-box {
-        width: 48%; /* Two boxes per row on smaller screens */
-        margin: 10px 0; /* Adjust margin for stacked layout */
-    }
-}
-
-@media (max-width: 480px) {
-    .content-box {
-        width: 100%; /* One box per row on very small screens */
-    }
-}
+</body>
+</html>
