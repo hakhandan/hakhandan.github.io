@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossein's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,15 +12,136 @@
             padding: 0;
             color: #333;
         }
+
+        header {
+            background-image: url('header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content-box {
+            width: 30%; /* Adjust width to fit three boxes in a row */
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 400px; /* Increased height */
+        }
+
+        .content-box h3 {
+            font-size: 1.5em; /* Slightly smaller font size */
+            margin-bottom: 15px;
+            text-align: center;
+            color: white;
+            background-color: #28A745; /* Green color ribbon */
+            padding: 10px;
+            border-radius: 25px;
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            margin: 0 auto 20px;
+        }
+
+        .content-box h3 a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .content-box h3:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .content-box p {
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 0.9em; /* Slightly smaller font size */
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Hossein Ali Narouei-Khandan</h1>
-        <p>Researcher | Scientist | Innovator</p>
+        <div>
+            <h1>Hossein Ali Narouei-Khandan</h1>
+            <p>Researcher | Scientist | Innovator</p>
+        </div>
     </header>
+
+    <!-- Content Sections -->
+    <div class="section-container">
+        <div id="biography" class="content-box">
+            <h3><a href="#biography">Biography</a></h3>
+            <p>I was born in Zabol, a city in the Sistan and Baluchestan region of Iran, known for its rich history and the vast landscapes of the Iranian Plateau. My academic journey began with a bachelor's degree in Plant Pathology from the Agriculture College of Zabol, followed by an M.Sc. focused on using GIS to map plant diseases in Iran. I later earned my Ph.D. in Plant Pathology Modeling from Lincoln University in New Zealand. Afterward, I completed a postdoc at the University of Florida, collaborating with Professor Ariena van Bruggen, a distinguished scientist in plant pathology, on various research projects.</p>
+        </div>
+
+        <div id="research" class="content-box">
+            <h3><a href="#research">Research</a></h3>
+            <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
+        </div>
+
+        <div id="affiliation" class="content-box">
+            <h3><a href="#affiliation">Affiliation</a></h3>
+            <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to <a href="mailto:hakhandan@gmail.com">email me</a>, connect with me on <a href="https://www.linkedin.com/in/hossein-narouei-khandan/">LinkedIn</a>, or visit my <a href="https://www.researchgate.net/profile/Hossein-Narouei-Khandan">ResearchGate profile</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Hossein Ali Narouei-Khandan
+    </footer>
 
 </body>
 </html>
