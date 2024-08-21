@@ -13,17 +13,22 @@
             color: #333;
         }
 
-        header {
-            background-image: url('header-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+       header {
+    background-image: url('header-image.jpg');
+    background-size: cover; /* Ensures the image covers the entire header area */
+    background-position: center; /* Centers the image within the header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Ensures the header takes up the full width of the page */
+    height: 200px; /* Sets the header height to a narrow 200 pixels */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 0; /* Ensures no margin is added to the header */
+    padding: 0; /* Ensures no padding is added to the header */
+}
+
 
         header h1 {
             font-size: 4em;
