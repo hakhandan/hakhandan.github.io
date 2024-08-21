@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hossein Ali Narouei-Khandan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-image: url('header-image.jpg'); /* Use the same header image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            color: #0056b3;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .profile-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile-links a {
+            display: inline-block;
+            margin: 10px 20px;
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .profile-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p>If you would like to get in touch, feel free to reach out through any of the following methods:</p>
+        
+        <p><strong>Email:</strong> <a href="mailto:hakhandan@gmail.com">hakhandan@gmail.com</a></p>
+        <p><strong>Phone:</strong> +64 210-742-232</p>
+        
+        <h2>Research Profiles</h2>
+        <div class="profile-links">
+            <a href="https://scholar.google.com/citations?user=yXwA9sAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-4218-5934" target="_blank">ORCiD</a>
+            <a href="https://www.researchgate.net/profile/Hossein-Narouei-Khandan" target="_blank">ResearchGate</a>
+            <a href="https://www.linkedin.com/in/hossein-narouei-khandan/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Hossein Ali Narouei-Khandan
+    </footer>
+
+</body>
+</html>
