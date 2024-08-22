@@ -11,61 +11,66 @@
             margin: 0;
             padding: 0;
             color: #333;
-                line-height: 1.6; /* Slightly increased line spacing */
-
+            line-height: 1.6; /* Slightly increased line spacing */
         }
 
         header {
             background-image: url('header-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
+            background-size: cover; /* Ensures the image covers the entire header area */
+            background-position: center; /* Centers the image within the header */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            width: 100%; /* Ensures the header takes up the full width of the page */
+            height: 200px; /* Sets the header height to a narrow 200 pixels */
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
+            margin: 0; /* Ensures no margin is added to the header */
+            padding: 0; /* Ensures no padding is added to the header */
         }
-       header {
-    background-image: url('header-image.jpg');
-    background-size: cover; /* Ensures the image covers the entire header area */
-    background-position: center; /* Centers the image within the header */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    width: 100%; /* Ensures the header takes up the full width of the page */
-    height: 200px; /* Sets the header height to a narrow 200 pixels */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin: 0; /* Ensures no margin is added to the header */
-    padding: 0; /* Ensures no padding is added to the header */
-}
-
 
         header h1 {
             font-size: 4em;
             margin: 0;
         }
+
         header p {
             font-size: 1.5em;
             margin: 10px 0 0;
         }
+
         .section-container {
             display: flex;
             justify-content: space-between;
             padding: 20px;
+            flex-direction: column;
+            align-items: center;
         }
+
         .content-box {
-            width: 30%; /* Adjust width to fit three boxes in a row */
+            width: 100%; /* Ensure full width on mobile */
             background-color: #f4f4f4;
             border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
+            padding: 15px; /* Slightly reduce padding */
+            margin: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             height: 250px; /* Increased height */
         }
+
+        @media (min-width: 768px) {
+            .section-container {
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .content-box {
+                width: 30%; /* Adjust width to fit three boxes in a row */
+                margin: 10px;
+            }
+        }
+
         .content-box h3 {
             font-size: 1.5em; /* Slightly smaller font size */
             margin-bottom: 15px;
@@ -79,33 +84,40 @@
             width: 80%;
             margin: 0 auto 20px;
         }
+
         .content-box h3 a {
             text-decoration: none;
             color: white;
             display: block;
         }
+
         .content-box h3:hover {
             background-color: #218838; /* Darker green on hover */
         }
+
         .content-box p {
             margin-top: 20px;
             text-align: justify;
             font-size: 0.9em; /* Slightly smaller font size */
         }
+
         .contact {
             text-align: center;
             padding: 40px 20px;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
         }
+
         footer a {
             color: #f4f4f4;
             text-decoration: none;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
@@ -119,6 +131,7 @@
             <p>Researcher | Scientist | Innovator</p>
         </div>
     </header>
+
     <!-- Content Sections -->
     <div class="section-container">
         <div id="biography" class="content-box">
@@ -127,27 +140,26 @@
         </div>
         <div id="research" class="content-box">
             <h3><a href="research.html">Research</a></h3>
-<p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
+            <p>My research integrates quantitative modeling, GIS, and bioinformatics to address critical questions at the intersection of plant pathology and environmental science. I focus on the spatial distribution of plant diseases, biosecurity, and the impacts of climate change on agricultural systems. My work involves using advanced statistical techniques and machine learning to predict disease outbreaks, assess risks, and develop strategies for sustainable crop protection.</p>
         </div>
-                
         <div id="affiliation" class="content-box">
-    <h3>Affiliation</h3>
+            <h3>Affiliation</h3>
             <p>I am currently affiliated with the Ministry for Primary Industries in New Zealand, where I serve as a Specialist Adviser. In this role, I lead projects focused on biosecurity, spatial intelligence, and risk assessment, utilizing my expertise in GIS, data modeling, and plant pathology to support New Zealand's agricultural and environmental health.</p>
         </div>
         <div id="hobbies and interests" class="content-box">
-            <h3><a href="#hobbies and interests">Intersts&Hobbies</a></h3>
-            <p>Waht I do in my free time. Music and apps that I create just for fun! </p>
+            <h3><a href="#hobbies and interests">Interests & Hobbies</a></h3>
+            <p>What I do in my free time. Music and apps that I create just for fun!</p>
         </div>
     </div>
 
+    <!-- Contact Section -->
     <section class="contact">
-      
         <h3><a href="Contact.html">Get in Touch</a></h3>
-
     </section>
+
     <!-- Footer -->
     <footer>
-        &copy; 2024  Narouei-Khandan
+        &copy; 2024 Narouei-Khandan
     </footer>
 </body>
 </html>
