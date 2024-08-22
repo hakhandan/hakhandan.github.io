@@ -1,54 +1,37 @@
 .section-container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensures all boxes have equal height */
-    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+    align-items: stretch;
+    flex-wrap: nowrap; /* Keep in one row on larger screens */
     padding: 20px;
 }
 
 .content-box {
-    flex: 1; /* Allow boxes to grow and fill available space */
-    max-width: 23%; /* Adjust the width to ensure all four fit in one row */
+    flex: 1;
+    max-width: 23%;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 0 10px; /* Adds a small margin between boxes */
+    margin: 0 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centers the text inside each box */
+    text-align: center;
 }
 
-.content-box h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: white;
-    background-color: #28A745; /* Green color ribbon */
-    padding: 10px;
-    border-radius: 25px;
-}
-
-.content-box p {
-    margin-top: 10px;
-    text-align: justify;
-    font-size: 0.95em;
-}
-
-/* Ensure that the layout is responsive on smaller screens */
-@media (max-width: 1200px) {
-    .content-box {
-        max-width: 23%;
-    }
-}
-
+/* Mobile adjustments */
 @media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .content-box {
-        max-width: 48%; /* Two boxes per row on tablets */
+        max-width: 90%;
         margin: 10px 0;
     }
 }
 
 @media (max-width: 480px) {
     .content-box {
-        max-width: 100%; /* One box per row on mobile */
-        margin: 10px 0;
+        max-width: 100%; /* Full width on very small screens */
     }
 }
