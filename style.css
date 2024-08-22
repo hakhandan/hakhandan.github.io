@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: nowrap; /* Keep in one row on larger screens */
     padding: 20px;
 }
 
@@ -22,16 +21,19 @@
     .section-container {
         flex-direction: column;
         align-items: center;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .content-box {
-        max-width: 90%;
+        max-width: 100%; /* Ensure full width on mobile */
         margin: 10px 0;
+        padding: 15px; /* Slightly reduce padding */
     }
 }
 
 @media (max-width: 480px) {
     .content-box {
-        max-width: 100%; /* Full width on very small screens */
+        max-width: 100%; /* Keep full width on very small screens */
+        margin: 10px 0;
     }
 }
