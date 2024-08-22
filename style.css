@@ -1,115 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6; /* Slightly increased line spacing */
-}
-
-header {
-    background-image: url('header-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    font-size: 2.5em; /* Reduced font size for better mobile fit */
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em; /* Adjusted font size for better readability */
-    margin: 10px 0 0;
-}
-
 .section-container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
     justify-content: space-between;
+    align-items: stretch; /* Ensures all boxes have equal height */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
     padding: 20px;
 }
 
 .content-box {
-    width: 100%; /* Make boxes full-width on small screens */
-    max-width: 100%; /* Ensure they don't exceed screen width */
+    flex: 1; /* Allow boxes to grow and fill available space */
+    max-width: 23%; /* Adjust the width to ensure all four fit in one row */
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px 0; /* Add some space between boxes */
+    margin: 0 10px; /* Adds a small margin between boxes */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    height: auto; /* Allow the height to adjust based on content */
+    text-align: center; /* Centers the text inside each box */
 }
 
 .content-box h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    text-align: center;
     color: white;
-    background-color: #28A745;
+    background-color: #28A745; /* Green color ribbon */
     padding: 10px;
     border-radius: 25px;
-    position: relative;
-    z-index: 1;
-    width: auto;
-    margin: 0 auto 20px;
-}
-
-.content-box h3 a {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.content-box h3:hover {
-    background-color: #218838;
 }
 
 .content-box p {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: justify;
-    font-size: 1em; /* Slightly larger font size for readability */
+    font-size: 0.95em;
 }
 
-.contact {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer a {
-    color: #f4f4f4;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .section-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
-
+/* Ensure that the layout is responsive on smaller screens */
+@media (max-width: 1200px) {
     .content-box {
-        width: 90%; /* Make content boxes take up most of the screen */
-        margin: 10px 0; /* Adjust margin for stacked layout */
-        padding: 15px; /* Slightly reduce padding for better fit */
-        font-size: 1.1em;
+        max-width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        max-width: 48%; /* Two boxes per row on tablets */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-box {
+        max-width: 100%; /* One box per row on mobile */
+        margin: 10px 0;
+    }
+}
