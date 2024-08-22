@@ -37,8 +37,19 @@
         margin: 10px 0;
     }
 
+   /* Default styling for header h1 */
+header h1 {
+    font-size: 2em; /* Default size for larger screens */
+    word-break: break-word; /* Ensures the text breaks into a new line if necessary */
+}
+
+/* Adjust font size for mobile devices */
+@media (max-width: 600px) {
     header h1 {
-        font-size: 2em; /* Further reduce the font size for smaller screens */
-        word-break: break-word; /* Ensures the text breaks into a new line if necessary */
+        font-size: 1.5em; /* Reduce font size for mobile screens */
+        word-break: normal; /* Prevent word breaking unless absolutely necessary */
+        white-space: nowrap; /* Prevent the text from wrapping to a new line */
+        overflow: hidden; /* Hide overflow text if necessary */
+        text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncated text */
     }
 }
