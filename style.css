@@ -36,4 +36,8 @@
         max-width: 100%; /* Keep full width on very small screens */
         margin: 10px 0;
     }
+
+    header h1 {
+        font-size: 2.5em; /* Reduce the font size to fit on one line on mobile */
+    }
 }
