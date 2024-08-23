@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies and Interests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Hobbies and Interests</h1>
+
+        <section>
+            <h2>My Shiny Applications</h2>
+            <p>In my free time, I enjoy creating Shiny apps, PowerBI dashboards, GIS dashboards, and web applications. Below are some of the apps I have developed:</p>
+            <ul>
+                <li><a href="https://myanalysers.shinyapps.io/ANZ_Expense_Analyser/" target="_blank">ANZ Expense Analyzer</a>: A tool for analyzing expenses.</li>
+                <li><a href="https://myanalysers.shinyapps.io/Sampling/" target="_blank">ISPM31 Sampling Tool</a>: A sampling tool following the ISPM31 standard.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The Music I Play</h2>
+            <p>I play a Persian instrument called the Santur. The Santur is a hammered dulcimer of Iranian origin, which is traditionally made of walnut or other fine woods. The Persian Santur has 72 strings and is played with two light wooden mallets known as "Mezrab." It produces a rich, resonant sound that is central to Persian classical music.</p>
+        </section>
+    </div>
+
+</body>
+</html>
