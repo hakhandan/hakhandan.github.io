@@ -39,7 +39,7 @@
 
    /* Default styling for header h1 */
 header h1 {
-    font-size: 2em; /* Default size for larger screens */
+    font-size: 1.5em; /* Default size for larger screens */
     word-break: break-word; /* Ensures the text breaks into a new line if necessary */
 }
 
